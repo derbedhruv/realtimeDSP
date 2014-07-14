@@ -1,3 +1,11 @@
+/* 
+this has been taken and modified from
+
+http://openenergymonitor.org/emon/buildingblocks/digital-filters-for-offset-removal
+
+Acknowledgements duly noted.
+
+*/
 int sample = 0;
 int last_sample = 0;
 double a = 0;
