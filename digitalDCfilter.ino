@@ -21,7 +21,7 @@ void loop()
 {
   // Generate a test signal
   last_sample = sample;
-  a+=0.1; sample = 512 + sin(a) * 100;
+  sample = analogRead(A0);      // read in the next value
   
   // Floating maths implementation of high pass filter takes 36-40 microseconds
   filtered_value = 0.996 * (filtered_value + sample - last_sample);    
